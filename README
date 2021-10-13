@@ -1,0 +1,21 @@
+A simple HTTP service providing the current weather conditions wrapping around the OpenWeatherAPI.
+
+Installation (on *nix-like systems) (Tested on Python 3.9.7):
+  - Create a virtual environment for installing dependencies
+    - `python -m venv virtualenv`
+  - Activate your virtual environment
+    - (on *nix-like systems) `source ./virtualenv/bin/activate`
+  - install dependencies
+    - `pip install --requirement requirements.txt`
+
+Running
+  - `python src/weather.py`
+  - Open your browser to http://127.0.0.1:8080/current?lat=<LATITUDE>&long=<LONGITUDE>
+    - Lat/Long are provided in decimal degrees (latitude == -90 to 90, longitude == -180 to 180)
+    - For example, Fargo, ND
+      - http://127.0.0.1:8080/current?lat=46.87&long=-96.78
+
+Next Steps
+  - Add unit tests
+  - Refactor the API calls out to their own module, making it a more generic API handler
+  - More complete error handling and output.
