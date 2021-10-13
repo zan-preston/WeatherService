@@ -9,7 +9,8 @@ Installation (on *nix-like systems) (Tested on Python 3.9.7):
     - `pip install --requirement requirements.txt`
 
 Running
-  - `python src/weather.py`
+  - Open src/weather.py and insert your OpenWeatherAPI api key in the variable on line 14 and save
+  - Run `python src/weather.py`
   - Open your browser to http://127.0.0.1:8080/current?lat=<LATITUDE>&long=<LONGITUDE>
     - Lat/Long are provided in decimal degrees (latitude == -90 to 90, longitude == -180 to 180)
     - For example, Fargo, ND
